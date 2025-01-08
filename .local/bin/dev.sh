@@ -8,7 +8,8 @@ devcontainer up \
   --additional-features '
     {
       "ghcr.io/duduribeiro/devcontainer-features/neovim:1.0.1": {},
-      "ghcr.io/devcontainers-extra/features/fzf:1": {}
+      "ghcr.io/devcontainers-extra/features/fzf:1.0.14": {},
+      "ghcr.io/GeorgOfenbeck/features/lazygit-linuxbinary:1.0.0": {}
     }' \
   --workspace-folder . \
   --mount "type=bind,source=$HOME/.config,target=/root/.config" | jq
