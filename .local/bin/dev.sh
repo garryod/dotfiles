@@ -12,7 +12,8 @@ devcontainer up \
       "ghcr.io/GeorgOfenbeck/features/lazygit-linuxbinary:1.0.0": {}
     }' \
   --workspace-folder . \
-  --mount "type=bind,source=$HOME/.config,target=/root/.config" | jq
+  --mount "type=bind,source=$HOME/.config,target=/root/.config" \
+  --mount "type=bind,source=$HOME/.ssh,target=/root/.ssh" | jq
 devcontainer exec \
   --docker-path podman \
   --workspace-folder . \
