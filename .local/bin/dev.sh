@@ -17,6 +17,7 @@ devcontainer up \
     }' \
   --workspace-folder . \
   --mount "type=bind,source=$HOME/.config,target=/root/.config" \
+  --mount "type=bind,source=$HOME/.gitconfig,target=/root/.gitconfig" \
   --mount "type=bind,source=$HOME/.ssh,target=/root/.ssh" | jq
 devcontainer exec \
   --docker-path podman \
