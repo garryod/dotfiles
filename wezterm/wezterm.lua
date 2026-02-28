@@ -3,6 +3,8 @@ local config = wezterm.config_builder()
 
 config.default_prog = { "zsh" }
 
+config.font = wezterm.font("CodeNewRoman Nerd Font")
+
 config.window_padding = {
 	left = 0,
 	right = 0,
