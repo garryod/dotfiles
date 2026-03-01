@@ -24,6 +24,9 @@ return {
           ["<leader>og"] = false,
           ["<leader>oi"] = false,
         },
+        input_window = {
+          ["<tab>"] = { "switch_mode" },
+        },
       },
     },
   },
