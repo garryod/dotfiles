@@ -18,6 +18,13 @@ return {
     opts = {
       preferred_picker = "fzf",
       preferred_completion = "blink",
+      keymap = {
+        editor = {
+          ["<leader>oo"] = { "toggle" },
+          ["<leader>og"] = false,
+          ["<leader>oi"] = false,
+        },
+      },
     },
   },
 }
